@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <form id="city-form">
+        <input
+          type="text"
+          class="city-search"
+          placeholder="Enter a city"
+          required
+          id="city"
+        />
+        <input
+          type="submit"
+          class="submit-search"
+          id="submitCitySearch"
+          value="Search"
+        />
+      </form>
+    </header>
+
+    <h1 id="current-city">🗺️Cambridge</h1>
+    <p>
+      <span id="current-day">Saturday </span>
+      <span id="current-time"> 14:30</span>, partly cloudy <br /><strong
+        >Humidity:</strong
+      >
+      57%, <strong>Wind:</strong> 19km/h
+    </p>
+
+    <div class="current-weather">⛅ <span id="temperature">29℃</span></div>
+    <br />
+    <div class="forecast">
+      <ul>
+        <li>
+          Yesterday 🌦️
+          <ol>
+            <strong>22℃</strong>
+            / 20℃
+          </ol>
+        </li>
+        <li>
+          Today ⛅
+          <ol>
+            <strong>25℃ </strong
+            >/ 14℃
+          </ol>
+        </li>
+        <li>
+          Friday ☀️
+          <ol>
+            <strong>21℃ </strong
+            >/ 18℃
+          </ol>
+        </li>
+        <li>
+          Saturday ☁️
+          <ol>
+            <strong>29℃ </strong
+            >/ 11℃
+          </ol>
+        </li>
+        <li>
+          Sunday 🌩️
+          <ol>
+            <strong>21℃</strong>
+            / 9℃
+          </ol>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <footer>
+      This project is coded by Holly Lagrou and is open-sourced on
+      <a href="#" target="_blank">GitHub</a> and hosted on
+      <a href="#" target="_blank">Netlify</a>
+    </footer>
+    <script src="script/index.js"></script>
+  </body>
+</html>
